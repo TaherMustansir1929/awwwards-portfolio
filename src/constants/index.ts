@@ -1,4 +1,13 @@
 // index.js
+
+// Breakpoints for responsive design
+export const BREAKPOINTS = {
+  mobile: 853,
+  tablet: 1024,
+  desktop: 1440,
+  large: 1920,
+} as const;
+
 export const servicesData = [
   {
     title: "FullStack Development",
