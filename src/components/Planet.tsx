@@ -14,12 +14,12 @@ interface PlanetProps {
 
 export function Planet(props: PlanetProps) {
   const shapeContainer = useRef<THREE.Group>(null);
-  const shperesContainer = useRef<THREE.Group>(null);
+  const spheresContainer = useRef<THREE.Group>(null);
   const ringContainer = useRef<THREE.Mesh>(null);
   const { nodes, materials } = useGLTF("/models/Planet.glb");
 
   useGSAP(() => {
-    if (!shapeContainer.current || !shperesContainer.current || !ringContainer.current) return;
+    if (!shapeContainer.current || !spheresContainer.current || !ringContainer.current) return;
     
     const tl = gsap.timeline();
     tl.from(shapeContainer.current.position, {
@@ -28,7 +28,7 @@ export function Planet(props: PlanetProps) {
       ease: "circ.out",
     });
     tl.from(
-      shperesContainer.current.rotation,
+      spheresContainer.current.rotation,
       {
         x: 0,
         y: Math.PI,
@@ -53,7 +53,7 @@ export function Planet(props: PlanetProps) {
 
   return (
     <group ref={shapeContainer} {...props} dispose={null}>
-      <group ref={shperesContainer}>
+      <group ref={spheresContainer}>
         <mesh
           castShadow
           receiveShadow

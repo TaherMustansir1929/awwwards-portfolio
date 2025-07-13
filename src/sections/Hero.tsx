@@ -6,9 +6,10 @@ import { Canvas } from "@react-three/fiber";
 import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
+import { BREAKPOINTS } from "../constants";
 
 const Hero = () => {
-  const isMobile = useMediaQuery({ maxWidth: 853 });
+  const isMobile = useMediaQuery({ maxWidth: BREAKPOINTS.mobile });
 
   const contextRef = useRef(null);
   const headerRef = useRef(null);
