@@ -5,6 +5,7 @@ import Services from "./sections/Services"
 import ServiceSummary from "./sections/ServiceSummary"
 import About from "./sections/About"
 import Works from "./sections/Works"
+import ContactSummary from "./sections/ContactSummary"
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
       <Services />
       <About />
       <Works />
+      <ContactSummary />
+      <section className="h-screen"/>
     </ReactLenis>
   )
 }
