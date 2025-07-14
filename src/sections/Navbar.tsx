@@ -126,7 +126,7 @@ const Navbar = () => {
           <div className="font-light">
             <p className="tracking-wider text-white/50">E-mail</p>
             <p className="text-xl tracking-widest lowercase text-pretty">
-              example@example.com
+              taher.mustansir2@gmail.com
             </p>
           </div>
           <div className="font-light">
@@ -136,6 +136,7 @@ const Navbar = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
                   className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
                 >
                   {"{ "}
@@ -150,11 +151,11 @@ const Navbar = () => {
       <div
         className="fixed z-50 flex flex-col items-center justify-center gap-1 transition-all duration-300 bg-black rounded-full cursor-pointer w-14 h-14 md:w-20 md:h-20 top-4 right-10"
         onClick={toggleMenu}
-        style={
-          showBurger
-            ? { clipPath: "circle(50% at 50% 50%)" }
-            : { clipPath: "circle(0% at 50% 50%)" }
-        }
+        style={{
+          ...(showBurger
+        ? { clipPath: "circle(50% at 50% 50%)" }
+        : { clipPath: "circle(0% at 50% 50%)" }),
+        }}
       >
         <span
           ref={topLineRef}

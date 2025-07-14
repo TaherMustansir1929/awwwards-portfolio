@@ -30,9 +30,9 @@ const ContactSummary = () => {
         scrub: 0.5,
         pin: true,
         pinSpacing: true,
-      }
-    })
-  })
+      },
+    });
+  });
 
   return (
     <section
@@ -42,10 +42,12 @@ const ContactSummary = () => {
       <Marquee items={items} />
       <div className="overflow-hidden font-light text-center contact-text-responsive">
         <p>
-          " Let's build a <br />
-          <span className="font-medium">memorable</span> &{" "}
+          <span className="font-genos font-bold">"</span> Let's build a <br />
+          <span className="font-medium font-major-mono">meMoRAble</span> &{" "}
           <span className="italic">inspiring</span> <br />
-          web application <span className="text-gold">together</span> "
+          web application{" "}
+          <span className="text-gold font-gloock">together</span>{" "}
+          <span className="font-genos font-bold">"</span>
         </p>
       </div>
       <Marquee
