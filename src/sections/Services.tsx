@@ -6,7 +6,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Services = () => {
-  const text = `I build secure, high performance full stack apps with smooth UX to drive growths not headaches.`;
+  const text = `I build secure, high-performance full-stack apps
+    with smooth UX to drive growth 
+    not headaches.`;
 
   const serviceRefs = useRef<Array<HTMLDivElement | null>>([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" }); // 768px
