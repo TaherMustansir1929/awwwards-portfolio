@@ -6,6 +6,7 @@ import ServiceSummary from "./sections/ServiceSummary"
 import About from "./sections/About"
 import Works from "./sections/Works"
 import ContactSummary from "./sections/ContactSummary"
+import Contact from "./sections/Contact"
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       <About />
       <Works />
       <ContactSummary />
-      <section className="h-screen"/>
+      <Contact />
     </ReactLenis>
   )
 }
