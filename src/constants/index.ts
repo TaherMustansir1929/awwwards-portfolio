@@ -67,9 +67,9 @@ export const servicesData = [
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "Web Apps",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web apps (React/Next.JS) that users love—bridging design and functionality seamlessly.",
     items: [
       {
         title: "Cross-Platform Apps",
@@ -180,11 +180,10 @@ export const projects = [
   },
 ];
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
+  { name: "Instagram", href: "https://www.instagram.com/taher_m.16/" },
   {
     name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+    href: "https://www.youtube.com/@zeo-xd",
   },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "GitHub", href: "https://github.com/TaherMustansir1929" },
 ];

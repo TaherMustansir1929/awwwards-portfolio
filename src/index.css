@@ -1,15 +1,36 @@
-@import "tailwindcss";
-
+/* Raleway Font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Margesh Font */
+@import url('https://fonts.cdnfonts.com/css/margesh');
+/* Gloock Font */
+@import url('https://fonts.cdnfonts.com/css/gloock-2');
+/* Major Mono Display Font */
+@import url('https://fonts.cdnfonts.com/css/major-mono-display-2');
+/* Montagu Slab Font  */
+@import url('https://fonts.cdnfonts.com/css/montagu-slab');
+/* Genos Font  */
+@import url('https://fonts.cdnfonts.com/css/genos');
+/* Brolia Font */
+@import url('https://fonts.cdnfonts.com/css/brolia');
+/* Masconia Font  */
+@import url('https://fonts.cdnfonts.com/css/masconia');
+
+@import "tailwindcss";
 
 @theme {
   --color-primary: #e5e5e0;
+  --color-black: rgb(15, 15, 15);
   --color-DarkLava: #393632;
   --color-SageGray: #8b8b73;
   --color-gold: #cfa355;
-  --font-amiamie: "Amiamie", sans-serif;
-  --font-amiamie-round: "Amiamie-Round", sans-serif;
   --font-raleway: "Raleway", sans-serif;
+  --font-margesh: "Margesh", serif;
+  --font-gloock: "Gloock", serif;
+  --font-major-mono: "Major Mono Display", serif;
+  --font-montagu-slab: "Montagu Slab", serif;
+  --font-genos: "Genos", serif;
+  --font-brolia: "Brolia", serif;
+  --font-masconia: "Masconia", serif;
 
   --animate-marquee: marquee 40s infinite linear;
   @keyframes marquee {
@@ -23,11 +44,52 @@
 }
 
 body {
-  background: #e5e5e0;
-  color: black;
+  background: var(--color-primary);
+  color: var(--color-black);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: var(--font-raleway);
 }
+
+/* CUSTOM UTILITY */
+
+@utility font-margesh {
+  font-family: var(--font-margesh);
+}
+
+@utility font-gloock {
+  font-family: var(--font-gloock);
+}
+
+@utility font-major-mono {
+  font-family: var(--font-major-mono);
+}
+
+@utility font-montagu-slab {
+  font-family: var(--font-montagu-slab);
+}
+
+@utility font-genos {
+  font-family: var(--font-genos);
+}
+
+@utility font-brolia {
+  font-family: var(--font-brolia);
+}
+
+@utility font-masconia {
+  font-family: var(--font-masconia);
+}
+
+@utility bg-black {
+  background-color: var(--color-black);
+}
+
+@utility text-white {
+  color: var(--color-primary);
+}
+
+/* PREBUILT UTILITY */
 
 @utility clip-path {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
